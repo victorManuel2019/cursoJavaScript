@@ -1,0 +1,60 @@
+/* (anulación de primeros ejercicios) RETIRAR SI ES NECESARIO...
+^^^^^^^^^^
+//querySelector selecciona los lementos de HTML y ser manejados en JS
+const h2 = document.querySelector("h2");
+const p = document.querySelectorAll("p");
+//querySelector engloba los elemtos de p en un solo elemento que los engloba
+const parrafo2 = document.querySelector(".parrafo2");
+const input = document.querySelector("input");
+
+console.log(input.value);//muestra los valores introducidos por el usuario en el input
+
+console.log({
+    h2,
+    p,
+    parrafo2,
+    input,
+});
+
+h2.innerHTML = "Otro tema con .InnerHtml";
+/*
+innerHTML: Nos permite modificar el HTML que este dentro de la etiqueta seleccionada
+se pueden incluir codigos de HTML <../> 
+innerText: Simplemete nos devuelve el texto del elemento HTML como un texto en litera
+*/
+
+/* MODIFICAR ATRIBUTOS
+ h2.getAttribute("class");//nos ayuda a leer los atributos de nuestros elementos 
+ console.log(h2.getAttribute("class"));
+ h2.setAttribute("class"); //Nos ayuda a modificar los atributos del elemento
+ h2.setAttribute("class","CursoPrac");
+En el primer parametro se indica la clase a modificar, y en el segundo es el nuevo valor 
+*/
+
+/*Agregar clases 
+^^^^^^^^^^^^^^^^
+h2.classList.add("lenguaje");//agregamos clase..
+h2.classList.remove("Curso_js");//Ahora eliminamos una clase que exista en el elemento
+
+input.value = "NOMBRE...";//esto nos ayuda a modificar los valores iniciales del input
+
+//CREAR ELEMENTO NUEVO DESDE CERO
+// document.createElement("elemento a crear");
+console.log(document.createElement("form"));
+
+//VISUALIZAR ELEMENTO NUEVO EN HTML
+const imagen = document.createElement("img");//se crea el elemento HTML
+imagen.setAttribute("src","https://st3.depositphotos.com/10376142/31986/i/450/depositphotos_319861484-stock-photo-pink-js-file-document-download.jpg");
+//el primer parametro es la propiedad de una imagen dentro de elemento creado (src="") y el segundo es la direccion de la imagen
+
+console.log(imagen);
+//con el sigueinte codigo indicamos que el elemtno creado (imagen) se agraga a un elemento ya existente
+//indicamos al elemento que lo va a contener (parrafo2) y en seguida "apend" para agregar el parametro del elemento a insertar
+parrafo2.append(imagen);
+
+//Ahora hacemos que las letras del parrafo 
+parrafo2.innerHTML = "";//indicamos que sea un elemento con string vacio para que no haya texto
+//ahora repetimos la linea 54 y agregamos imagen
+parrafo2.append(imagen);
+^^^^^^^^^^
+*/

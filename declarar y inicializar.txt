@@ -1,0 +1,14 @@
+//var, let, const: son las mismas para variables o datos almacenados en memoria
+
+LET: nos deja cambiar el valor de las variables en un futuro
+Var: tambien pero a veces falla
+Const: ya no permite modificar la variable
+
+
+DECLARAR VARIABLES: cuando inidcamos a JS que vamos a crear una cariable CON el un nombre denominado...
+
+	--let nombre = "cualquiera";
+
+INICIALIZARVARIABLES: es asignarle un valor a una variable, y cunado se le cambia el valor a esa variable recibe el nombre de REINICIALIZAR...
+
+	--nombre = "cualquiera"
