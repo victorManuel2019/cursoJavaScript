@@ -240,7 +240,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#Ignorar la carpeta de evidencias fotograficas
-.evidenciasPrac
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,node
